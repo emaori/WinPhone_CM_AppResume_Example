@@ -24,6 +24,8 @@ namespace PhoneApp1
         protected override PhoneApplicationFrame CreatePhoneApplicationFrame()
         {
             rootFrame = new PhoneApplicationFrame();
+            rootFrame.Navigated += rootFrame_Navigated;
+            rootFrame.Navigating += rootFrame_Navigating;
             return rootFrame;
         }
 
@@ -39,8 +41,6 @@ namespace PhoneApp1
 
             AddCustomConventions();
 
-            rootFrame.Navigated += rootFrame_Navigated;
-            rootFrame.Navigating += rootFrame_Navigating;
 
         }
 
