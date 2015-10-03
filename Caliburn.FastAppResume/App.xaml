@@ -1,0 +1,15 @@
+﻿<Application
+    x:Class="Caliburn.FastAppResume.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:fastAppResume="clr-namespace:Caliburn.FastAppResume">
+
+    <!--Application Resources-->
+    <Application.Resources>
+        <local:LocalizedStrings xmlns:local="clr-namespace:Caliburn.FastAppResume" x:Key="LocalizedStrings"/>
+        <fastAppResume:AppBootstrapper x:Key="AppBootstrapper" />
+    </Application.Resources>
+
+</Application>
