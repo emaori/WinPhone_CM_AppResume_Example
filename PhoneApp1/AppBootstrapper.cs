@@ -100,7 +100,6 @@ namespace PhoneApp1
                 };
         }
 
-
         void rootFrame_Navigating(object sender, NavigatingCancelEventArgs e)
         {
             if (reset && e.IsCancelable && e.Uri.OriginalString == "/MainPage.xaml")
@@ -114,7 +113,5 @@ namespace PhoneApp1
         {
             reset = e.NavigationMode == NavigationMode.Reset;
         }
-
-
     }
 }
